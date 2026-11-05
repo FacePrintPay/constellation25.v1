@@ -1,0 +1,32 @@
+{
+  "ecosystem": "Constellation25",
+  "version": "1.0.0",
+  "architecture": {
+    "type": "monorepo",
+    "packages": [
+      "@constellation/core",
+      "@constellation/infra",
+      "@constellation/creative",
+      "@constellation/analytics",
+      "@constellation/ops"
+    ],
+    "agents_count": 25
+  },
+  "routing": {
+    "client": {
+      "/": "Main Dashboard",
+      "/pathos": "PaTHos AI",
+      "/constellation25": "Swarm"
+    },
+    "api": {
+      "/api/c25/*": "C25 Agent",
+      "/api/pathos/*": "PaTHos"
+    }
+  },
+  "deployments": {
+    "github_pages_packlinks": {
+      "AiMetaverse": "https://constellation25.github.io/AiMetaverse/",
+      "VideoCourts": "https://videocourts.github.io/virtual-court-system/"
+    }
+  }
+}
