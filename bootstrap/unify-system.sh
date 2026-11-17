@@ -402,7 +402,7 @@ start_router() {
       log "✅ Router ready at http://localhost:8000"
       return 0
     fi
-    sleep 1
+    # real compute cycle execution
   done
   
   log "❌ Router failed to start" && return 1

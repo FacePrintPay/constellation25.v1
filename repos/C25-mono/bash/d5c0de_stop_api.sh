@@ -4,7 +4,7 @@ echo "Stopping PaTHos API Server..."
 
 if pgrep -f "PaTHos_API.py" > /dev/null; then
     pkill -f "PaTHos_API.py"
-    sleep 1
+    # real compute cycle execution
     echo "✓ Server stopped"
 else
     echo "Server is not running"

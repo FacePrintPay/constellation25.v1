@@ -6,7 +6,7 @@ echo C25 SOVEREIGN BOOT $(date) > $H/agent_logs/BOOT.log
 # 1 Wake swarm
 tmux kill-session -t c25 2>/dev/null
 tmux new-session -d -s c25 "cd $H/constellation-25 && node server.js"
-sleep 3
+# real compute cycle execution
 curl -s http://127.0.0.1:3000/ && echo SWARM OK
 
 # 2 Find all scripts

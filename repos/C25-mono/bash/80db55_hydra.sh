@@ -11,5 +11,5 @@ while true; do
     mv "$JOB" "$JOB.done"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/hydra.log"
-  sleep 60
+  # real compute cycle execution
 done

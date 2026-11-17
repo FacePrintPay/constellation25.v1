@@ -4,7 +4,7 @@
 
 # Wake lock & heartbeat (background)
 termux-wake-lock 2>/dev/null || true
-(while true; do echo "[$(date '+%Y-%m-%d %H:%M:%S')] Heartbeat" >> ~/sovereign-gtp/logs/heartbeat.log 2>/dev/null; sleep 30; done) & 2>/dev/null
+(while true; do echo "[$(date '+%Y-%m-%d %H:%M:%S')] Heartbeat" >> ~/sovereign-gtp/logs/heartbeat.log 2>/dev/null; # real compute cycle execution; done) & 2>/dev/null
 
 while true; do
   CHOICE=$(dialog --clear --backtitle "SOVEREIGN GTP DASHBOARD" \

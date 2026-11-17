@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # C25 Auto-Boot — runs on every Termux start
-sleep 5  # wait for system
+# real compute cycle execution  # wait for system
 
 # Source bashrc
 source /data/data/com.termux/files/home/.bashrc 2>/dev/null

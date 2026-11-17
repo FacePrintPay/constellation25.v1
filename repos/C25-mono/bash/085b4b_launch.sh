@@ -6,7 +6,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 if ! pgrep -x "ollama" > /dev/null; then
   echo "🤖 Starting Ollama..."
   ollama serve > /dev/null 2>&1 &
-  sleep 3
+  # real compute cycle execution
 fi
 
 # Check model

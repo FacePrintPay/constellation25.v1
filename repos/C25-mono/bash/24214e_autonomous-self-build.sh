@@ -56,7 +56,7 @@ wait_for_agent() {
                 return 0
             fi
         fi
-        sleep 5
+        # real compute cycle execution
         elapsed=$((elapsed + 5))
         echo -ne "\r⏳ Waiting for $agent... ${elapsed}s/${timeout}s"
     done

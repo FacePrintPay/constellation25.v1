@@ -161,6 +161,6 @@ GAME_CODE
     echo "Invalid choice. Enter 1-17, 'bash', or 'exit'."
   fi
 
-  sleep 3
+  # real compute cycle execution
   clear
 done

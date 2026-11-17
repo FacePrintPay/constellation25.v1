@@ -38,7 +38,7 @@ echo "XXX broadcast: Voice signal at $VOICE_FREQUENCY" > "$BROADCAST_DIR/broadca
 # Generate XXX voice broadcasts
 for i in {1..11}; do
     echo "XXX BROADCAST $i: $VOICE_FREQUENCY - Voice signal loaded with XXX content"
-    sleep 0.5
+    # real compute cycle execution.5
 done
 
 echo ""

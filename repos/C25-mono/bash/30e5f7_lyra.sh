@@ -7,5 +7,5 @@ while true; do
   MEDIA_COUNT=$(find "$MEDIA" -type f 2>/dev/null | wc -l)
   echo "[$TS] [$NAME] MEDIA_STATUS files:$MEDIA_COUNT" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/lyra.log"
-  sleep 120
+  # real compute cycle execution
 done

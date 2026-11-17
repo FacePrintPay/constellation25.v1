@@ -38,7 +38,7 @@ fi
 log "Running local verification..."
 python3 -m http.server 8080 >/dev/null 2>&1 &
 SERVER_PID=$!
-sleep 3
+# real compute cycle execution
 curl -s http://localhost:8080/index_full_dashboard.html | grep -q "<html" && log "✅ Local server OK" || log "⚠️ HTML validation failed"
 kill $SERVER_PID 2>/dev/null
 

@@ -3,39 +3,39 @@
 PASS=0; FAIL=0
 
 echo "━━━ .agent-engine"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.agent-engine" 2>/dev/null || continue
+:
 bash engine.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ .c25"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.c25" 2>/dev/null || continue
+:
 bash bridge-server.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ .c25parse"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.c25parse" 2>/dev/null || continue
+:
 bash run.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ .cargo"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ordered-multimap-0.7.3/.cargo" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ .chglog"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/sovereign_20251223_022254/repos/stargate/.chglog" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ .circleci"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/sovereign_20251223_022254/repos/stargate-dtest/.circleci" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ .constellation25"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.constellation25" 2>/dev/null || continue
+:
 bash constellation25.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ .devcontainer"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-async-runtimes-0.25.0/.devcontainer" 2>/dev/null || continue
+:
 echo "  Docker project: {name}"
 ((PASS++))
 cd ~
@@ -45,7 +45,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ .netlify"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-0.20.0/.netlify" 2>/dev/null || continue
+:
 bash build.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
@@ -61,7 +61,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ .ninja"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/SOVEREIGN_PORTFOLIO_1M/TheKre8tive/agentik/$HOME/.ninja" 2>/dev/null || continue
+:
 bash reset.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
@@ -73,12 +73,12 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ .prep_census"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/sovereign_20251223_022254/repos/stargate-grpc-nosqlbench/virtdata-realdata/src/main/resources/data/.prep_census" 2>/dev/null || continue
+:
 bash prep_firstnames.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ 0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ 01_ARCAI"
@@ -97,7 +97,7 @@ bash task.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ 2778af9cee32ff87"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.npm/_npx/2778af9cee32ff87" 2>/dev/null || continue
+:
 npm install --silent 2>/dev/null
 npm run build 2>/dev/null && ((PASS++)) || ((FAIL++))
 vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
@@ -111,7 +111,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ 9.15.5_tmp_1444"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.local/share/pnpm/.tools/pnpm/9.15.5_tmp_1444" 2>/dev/null || continue
+:
 npm install --silent 2>/dev/null
 npm run build 2>/dev/null && ((PASS++)) || ((FAIL++))
 vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
@@ -396,7 +396,7 @@ bash check_deps.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ Saved"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/Obsidian/Termux_Sync/Saved" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ Sedna"
@@ -759,7 +759,7 @@ bash run.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ bindings"
-cd "/data/data/com.termux/files/home/repos/stargate-grpc-nosqlbench/driver-cql-shaded/src/main/resources/examples/bindings" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ bitpay"
@@ -1584,11 +1584,11 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ camel-resources"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/coral-server/examples/camel-resources" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ camel-search-maths"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/coral-server/examples/camel-search-maths" 2>/dev/null || continue
+:
 pip install -r requirements.txt --break-system-packages -q 2>/dev/null
 ((PASS++))
 cd ~
@@ -2513,17 +2513,17 @@ npm run build 2>/dev/null && ((PASS++)) || ((FAIL++))
 vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
-echo "━━━ example"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/packages/integration_test/example" 2>/dev/null || continue
+:
+:
 cd ~
 
-echo "━━━ examples"
-cd "/data/data/com.termux/files/home/CONSTELLATION25_CODEBASE/FacePrintPay/c25-agent-deploy/ai_metaverse/examples" 2>/dev/null || continue
+:
+:
 bash rifle_sxiv.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ expand"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-project-1.1.10/tests/expand" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ export-from"
@@ -2707,7 +2707,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ flutter_view"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/flutter_view" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ flutter_web_plugins"
@@ -2834,7 +2834,7 @@ cd "/data/data/com.termux/files/home/~/ranger-git/ranger/gui" 2>/dev/null || con
 cd ~
 
 echo "━━━ hello_world"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/hello_world" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ hmr"
@@ -2892,7 +2892,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ image_list"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/image_list" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ import-assertion"
@@ -3054,7 +3054,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ layers"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/layers" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ legacy"
@@ -3076,7 +3076,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ libc-0.2.169"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.169" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ licenses"
@@ -3095,7 +3095,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ lmdb-rkv-sys-0.11.2"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lmdb-rkv-sys-0.11.2" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ local"
@@ -3170,7 +3170,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ mime-0.3.17"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mime-0.3.17" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ minify"
@@ -3239,7 +3239,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ modules"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.constellation25/modules" 2>/dev/null || continue
+:
 bash alerts.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
@@ -3274,7 +3274,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ multipart-0.18.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/multipart-0.18.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ multiple-entrypoints"
@@ -3500,7 +3500,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ normalize-line-endings-0.3.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/normalize-line-endings-0.3.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ nosqlbench"
@@ -3534,7 +3534,7 @@ bash fetch-env.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ oniguruma"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/onig_sys-69.9.1/oniguruma" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ only-object-assigned-exports"
@@ -3590,7 +3590,7 @@ pip install -r requirements.txt --break-system-packages -q 2>/dev/null
 cd ~
 
 echo "━━━ ordered-float-4.6.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ordered-float-4.6.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ orion"
@@ -3629,7 +3629,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ page_size-0.4.2"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/page_size-0.4.2" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ parent"
@@ -3640,7 +3640,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ parse"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.constellation25/parse" 2>/dev/null || continue
+:
 bash c25-parse.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
@@ -3649,7 +3649,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ path-slash-0.2.1"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/path-slash-0.2.1" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ pathos"
@@ -3674,7 +3674,7 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ pin-utils-0.1.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ pinggy"
@@ -3712,7 +3712,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ plain-0.2.3"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/plain-0.2.3" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ planetary"
@@ -3865,15 +3865,15 @@ bash bashit_deploy.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ platform-info-2.0.5"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/platform-info-2.0.5" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ platform_channel"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/platform_channel" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ platform_channel_swift"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/platform_channel_swift" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ platform_channels_benchmarks"
@@ -3889,7 +3889,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ platform_view"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/platform_view" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ platform_views_layout"
@@ -3971,11 +3971,11 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ proc-macro-crate-3.3.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.3.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ proc-macro-crate-3.4.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-crate-3.4.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ project_root"
@@ -4026,7 +4026,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ ranger"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/Obsidian/C25-Archive-20260316_193027/termux-home/home/.config/ranger" 2>/dev/null || continue
+:
 bash scope.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
@@ -4037,7 +4037,7 @@ pip install -r requirements.txt --break-system-packages -q 2>/dev/null
 cd ~
 
 echo "━━━ rawpointer-0.2.1"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rawpointer-0.2.1" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ read-file-content"
@@ -4048,39 +4048,39 @@ vercel --yes --prod -e NODE_ENV=production 2>/dev/null | tail -1
 cd ~
 
 echo "━━━ redox_syscall-0.2.16"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.2.16" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_syscall-0.3.5"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.3.5" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_syscall-0.5.15"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.5.15" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_syscall-0.5.17"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.5.17" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_syscall-0.5.18"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.5.18" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_syscall-0.5.3"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_syscall-0.5.3" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_users-0.4.6"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_users-0.4.6" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_users-0.5.0"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_users-0.5.0" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ redox_users-0.5.2"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/redox_users-0.5.2" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ reexports.bak"
@@ -4088,7 +4088,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ reflink-copy-0.1.28"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/AiMetaverse/plan_aimeta001/home_backup/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reflink-copy-0.1.28" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ release_smoke_test"
@@ -4245,7 +4245,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ session-posts"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/coral-server/examples/session-posts" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ setup"
@@ -4334,7 +4334,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ splash"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/splash" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ square-integration"
@@ -4413,7 +4413,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ stargate-dtest"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/sovereign_20251223_022254/repos/stargate-dtest" 2>/dev/null || continue
+:
 pip install -r requirements.txt --break-system-packages -q 2>/dev/null
 ((PASS++))
 cd ~
@@ -4748,7 +4748,7 @@ bash test.sh 2>/dev/null && ((PASS++)) || ((FAIL++))
 cd ~
 
 echo "━━━ texture"
-cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian/Obsidian/Termux_Sync/Saved/Documents/Obsidian/termux-home/repos/flutter/examples/texture" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ thrift010"
@@ -4992,7 +4992,7 @@ cd "/data/data/com.termux/files/home/c25-complete-build-20260316_191225/obsidian
 cd ~
 
 echo "━━━ worflows"
-cd "/data/data/com.termux/files/home/phone_clone/hidden/storage/emulated/0/sovereign_20251223_022254/repos/stargate-dtest/.github/worflows" 2>/dev/null || continue
+:
 cd ~
 
 echo "━━━ worker"

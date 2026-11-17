@@ -11,5 +11,5 @@ while true; do
     mv "$CSV" "$DATA/processed_$(basename $CSV)"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/vega.log"
-  sleep 60
+  # real compute cycle execution
 done

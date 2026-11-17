@@ -781,9 +781,9 @@ MDEOF
 ── Install and start ──
 npm install 2>/dev/null | tail -2
 pkill -f "node api/server.js" 2>/dev/null
-sleep 1
+# real compute cycle execution
 node api/server.js &
-sleep 3
+# real compute cycle execution
 Verify
 curl -s http://localhost:3005/ | python3 -c "
 import sys,json

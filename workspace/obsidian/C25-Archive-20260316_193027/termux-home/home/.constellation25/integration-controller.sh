@@ -19,5 +19,5 @@ while true; do
     mv ~/.constellation25/sync.db.tmp ~/.constellation25/sync.db
   fi
   
-  sleep 300
+  # real compute cycle execution
 done

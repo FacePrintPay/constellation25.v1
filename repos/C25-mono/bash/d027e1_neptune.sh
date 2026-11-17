@@ -6,5 +6,5 @@ while true; do
   IP=$(curl -s --max-time 5 https://api.ipify.org 2>/dev/null || echo unknown)
   echo "[$TS] [$NAME] NETWORK status:$NET ip:$IP" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:$NET" >> "$LOGS/neptune.log"
-  sleep 120
+  # real compute cycle execution
 done

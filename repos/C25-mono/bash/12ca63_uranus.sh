@@ -15,5 +15,5 @@ while true; do
     fi
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/uranus.log"
-  sleep 60
+  # real compute cycle execution
 done

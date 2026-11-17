@@ -20,5 +20,5 @@ while true; do
       echo "[$TS] [$NAME] RESTART_DETECTED dead_agent:$ANAME" >> "$LOGS/constellation25.log"
     fi
   done
-  sleep 60
+  # real compute cycle execution
 done

@@ -10,5 +10,5 @@ while true; do
   echo "[$TS] [$NAME] FORENSIC_SNAPSHOT log_bytes:$LOG_SIZE log_lines:$LOG_LINES manifest_entries:$MANIFEST_LINES sha256:$SHA" >> "$LOGS/constellation25.log"
   echo "[$TS] [SATURN] [SNAPSHOT] SHA256:$SHA lines:$LOG_LINES" >> "$MANIFEST"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/saturn.log"
-  sleep 300
+  # real compute cycle execution
 done

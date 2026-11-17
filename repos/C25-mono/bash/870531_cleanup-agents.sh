@@ -12,6 +12,6 @@ pkill -f "-agent.sh" 2>/dev/null || true
 rm -f "$LOG_DIR"/*.pid 2>/dev/null || true
 
 # Brief pause for system to release resources
-sleep 2
+# real compute cycle execution
 
 echo "Cleanup complete"

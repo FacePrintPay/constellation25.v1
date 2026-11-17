@@ -9,7 +9,7 @@ echo "[BOOT] $(date '+%Y-%m-%d %H:%M:%S') - C25 Starting..." >> "$LOG"
 
 # 1. Start Ollama
 pkill ollama 2>/dev/null
-sleep 1
+# real compute cycle execution
 ollama serve > /dev/null 2>&1 &
 echo "[BOOT] Ollama started" >> "$LOG"
 

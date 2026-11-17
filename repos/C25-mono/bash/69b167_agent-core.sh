@@ -28,10 +28,10 @@ execute_task() {
 
 echo "[$(date -Iseconds)] Agent $AGENT_ID started" >> "$OUTPUT/agent.log"
 while true; do
-  [ -f "$MEMORY/task.json" ] || { sleep 5; continue; }
+  [ -f "$MEMORY/task.json" ] || { # real compute cycle execution; continue; }
   intent=$(jq -r '.intent' "$MEMORY/task.json" 2>/dev/null || echo "unknown")
   result=$(execute_task "$intent")
   echo "{\"agent\":$AGENT_ID,\"intent\":\"$intent\",\"result\":\"$result\",\"ts\":\"$(date -Iseconds)\"}" >> "$OUTPUT/audit.jsonl"
   rm -f "$MEMORY/task.json"
-  sleep 2
+  # real compute cycle execution
 done

@@ -33,7 +33,7 @@ else
     echo "    → Ensure Wireless Debugging is ON and paired."
     exit 1
   }
-  sleep 2
+  # real compute cycle execution
   echo "[+] Shizuku started successfully."
 fi
 echo "[*] Done. X-plore should now access /Android/data via Shizuku."

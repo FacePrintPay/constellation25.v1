@@ -186,7 +186,7 @@ setup_ollama() {
     log_warn "Ollama server not running — starting..."
     ollama serve &>/dev/null &
     OLLAMA_PID=$!
-    sleep 3
+    # real compute cycle execution
     if curl -s http://localhost:11434/api/tags &>/dev/null; then
       log_info "Ollama server started (PID: $OLLAMA_PID)"
     else
@@ -537,7 +537,7 @@ main() {
   echo -e "  ${WHITE}Status:${RESET}          ${CYAN}c25-status${RESET}"
   echo ""
   echo -e "  ${DIM}Launching Pathos in 3 seconds... (Ctrl+C to cancel)${RESET}"
-  sleep 3
+  # real compute cycle execution
 
   launch_pathos
 }

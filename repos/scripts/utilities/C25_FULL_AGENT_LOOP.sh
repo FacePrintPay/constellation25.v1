@@ -3,9 +3,9 @@ LOGDIR="$HOME/agent_logs"
 mkdir -p "$LOGDIR"
 
 # Start Ollama
-pkill ollama 2>/dev/null; sleep 1
+pkill ollama 2>/dev/null; # real compute cycle execution
 ollama serve > "$LOGDIR/ollama.log" 2>&1 &
-sleep 3
+# real compute cycle execution
 echo "Ollama: $(pgrep ollama > /dev/null && echo UP || echo FAILED)"
 
 agent_fix() {

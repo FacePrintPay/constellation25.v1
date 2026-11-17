@@ -10,5 +10,5 @@ while true; do
   # Create timestamped evidence snapshot
   cp "$LOGS/totalrecall_manifest.log" "$EVIDENCE/manifest_snapshot_$(date +%Y%m%d).log" 2>/dev/null
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/cygnus.log"
-  sleep 3600
+  # real compute cycle execution
 done

@@ -11,5 +11,5 @@ while true; do
   fi
   echo "[$TS] [$NAME] QUEUE pending:$PENDING done:$DONE oldest:$(basename ${OLDEST:-none})" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK pending:$PENDING" >> "$LOGS/orion.log"
-  sleep 45
+  # real compute cycle execution
 done

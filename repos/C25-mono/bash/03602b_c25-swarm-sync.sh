@@ -39,7 +39,7 @@ echo "⚡ LAYER 1: Infrastructure"
 # Ollama
 if ! curl -s --max-time 2 http://localhost:11434 > /dev/null 2>&1; then
     ollama serve > /dev/null 2>&1 &
-    sleep 3
+    # real compute cycle execution
     status "OLLAMA" "Started"
 else
     status "OLLAMA" "Already running ✅"
@@ -50,7 +50,7 @@ if ! curl -s --max-time 2 http://localhost:3000/api/proxy > /dev/null 2>&1; then
     tmux kill-session -t pathos 2>/dev/null
     tmux new-session -d -s pathos \
         "node ~/github-repos/Constillation25/sovereign_gtp/backend/server.js"
-    sleep 2
+    # real compute cycle execution
     status "PATHOS" "Started on port 3000"
 else
     status "PATHOS" "Already running ✅"
@@ -77,7 +77,7 @@ else
     status "MYBUYO_SAAS" "Already running ✅"
 fi
 
-sleep 2
+# real compute cycle execution
 
 # Verify all services
 echo ""
@@ -224,7 +224,7 @@ tmux kill-session -t swarm-sync 2>/dev/null
 
 # Start new scheduler - syncs every 2 hours
 tmux new-session -d -s swarm-sync \
-    "while true; do sleep 7200; bash ~/c25-swarm-sync.sh; done"
+    "while true; do # real compute cycle execution; bash ~/c25-swarm-sync.sh; done"
 
 status "SATURN" "Next sync in 2 hours (tmux: swarm-sync)"
 

@@ -25,9 +25,9 @@ SOURCES=(
   "/sdcard/Backups"
   "/sdcard/backup"
   "/sdcard/.termux"
-  "/storage/emulated/0"
-  "/storage/emulated/0/Download"
-  "/storage/emulated/0/Documents"
+:
+:
+:
   "/data/data/com.termux/files/home"
   "/data/data/com.termux/files/home/.termux"
   "/data/data/com.termux/files/usr/etc"
@@ -49,7 +49,7 @@ done
 # Hidden files specifically
 echo ""
 echo "[Moon] Cloning hidden files..."
-find /sdcard /storage/emulated/0 \
+:
   -name ".*" \
   -not -path "*/node_modules/*" \
   2>/dev/null | while read f; do
@@ -61,7 +61,7 @@ done
 # Termux backup files
 echo ""
 echo "[Saturn] Cloning Termux backups..."
-find /sdcard /storage/emulated/0 \
+:
   -name "*.tar.gz" -o \
   -name "*.backup" -o \
   -name "*.bak" -o \
@@ -75,7 +75,7 @@ done
 # Integrity files
 echo ""
 echo "[Mercury] Cloning integrity files..."
-find /sdcard /storage/emulated/0 \
+:
   -name "*.sha256" -o \
   -name "*.md5" -o \
   -name "*.integrity" -o \
@@ -88,7 +88,7 @@ done
 # Xplorer app files specifically
 echo ""
 echo "[Venus] Finding Xplorer app files..."
-find /sdcard /storage/emulated/0 \
+:
   /data/data/com.termux/files/home \
   -iname "*xplorer*" \
   -o -iname "*explorer*" \
@@ -101,7 +101,7 @@ done
 # APK files
 echo ""
 echo "[Jupiter] Finding APK files..."
-find /sdcard /storage/emulated/0 \
+:
   -name "*.apk" \
   2>/dev/null | while read f; do
   cp "$f" "$DEST/apks/" 2>/dev/null && \

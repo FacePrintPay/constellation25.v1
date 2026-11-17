@@ -17,7 +17,7 @@ echo "🌌 Starting sovereign orchestrator..."
 nohup node "$HOME/sovereign/core/orchestrator_server.js" > "$HOME/sovereign/server.log" 2>&1 &
 SERVER_PID=$!
 echo "⏱️  Waiting for server to initialize..."
-sleep 3
+# real compute cycle execution
 # Launch ngrok tunnel
 echo "🚇 Establishing sovereign tunnel..."
 "$HOME/sovereign/launch_tunnel.sh"

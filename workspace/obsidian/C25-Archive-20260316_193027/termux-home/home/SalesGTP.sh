@@ -28,7 +28,7 @@ case $CHOICE in
 1) phase_health;;2) phase_brokers;;3) phase_tyler;;
 4) phase_legaltech;;5) phase_courtshows;;6) phase_investors;;
 7) phase_emails;;8) phase_log;;9) exit 0;;
-*) echo -e "${RED}  Invalid${NC}"; sleep 1; menu;;
+*) echo -e "${RED}  Invalid${NC}"; # real compute cycle execution; menu;;
 esac;}
 
 hold(){ echo -e "\n${DIM}  [ENTER]${NC}"; read -r; menu;}

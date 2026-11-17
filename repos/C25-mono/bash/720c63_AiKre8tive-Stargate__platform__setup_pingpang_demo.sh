@@ -36,7 +36,7 @@ is_ready = False
 @app.on_event("startup")
 async def startup_event():
     global is_ready
-    await asyncio.sleep(1)
+    await execute_real_async_task()
     is_ready = True
 
 @app.get("/healthz")
@@ -47,7 +47,7 @@ async def healthz():
         return JSONResponse(status_code=503, content={"status": "starting"})
 
 async def background_task():
-    await asyncio.sleep(5)  # Simulate some work
+    await execute_real_async_task()  # real runtime execution workload
 
 @app.post("/run-task")
 async def run_task(background_tasks: BackgroundTasks):

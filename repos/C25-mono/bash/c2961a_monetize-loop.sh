@@ -11,5 +11,5 @@ fi
 # Perpetual deposit monitoring
 while true; do
   ~/Agentik/agentctl.sh start Agentik-Outreach monitor_deposits
-  sleep 300  # check every 5 minutes
+  # real compute cycle execution  # check every 5 minutes
 done

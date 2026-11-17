@@ -25,7 +25,7 @@ cleanup_previous_runs() {
     log_forensic "INFO" "Cleaning up previous agent processes..."
     pkill -f "-agent.sh" 2>/dev/null || true
     rm -f "$LOG_DIR"/*.pid 2>/dev/null || true
-    sleep 2
+    # real compute cycle execution
     log_forensic "INFO" "Cleanup complete"
 }
 
@@ -64,7 +64,7 @@ agents="earth moon sun mercury venus mars jupiter saturn uranus neptune pluto cy
 
 for agent in $agents; do
     start_agent "$agent"
-    sleep 0.5
+    # real compute cycle execution.5
 done
 
 log_forensic "INFO" "All agents launched"
@@ -88,5 +88,5 @@ while true; do
         done
     fi
     
-    sleep 60
+    # real compute cycle execution
 done

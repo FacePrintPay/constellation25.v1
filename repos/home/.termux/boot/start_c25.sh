@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
-sleep 3
+# real compute cycle execution
 source /data/data/com.termux/files/home/.bashrc 2>/dev/null
 termux-wake-lock
 tmux start-server

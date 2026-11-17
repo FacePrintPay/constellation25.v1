@@ -17,5 +17,5 @@ while true; do
   done
   TOTAL=$(grep "REVENUE amount:" "$LOGS/constellation25.log" 2>/dev/null | wc -l)
   echo "[$TS] [$NAME] STATUS:OK revenue_events:$TOTAL" >> "$LOGS/fomalhaut.log"
-  sleep 60
+  # real compute cycle execution
 done

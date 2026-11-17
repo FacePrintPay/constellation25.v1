@@ -293,7 +293,7 @@ start_ngrok() {
     NGROK_PID=$!
     
     # Wait for tunnel to establish
-    sleep 5
+    # real compute cycle execution
     
     # Get the tunnel URL
     TUNNEL_URL=$(curl -s http://localhost:4040/api/tunnels | grep -o '"public_url":"[^"]*"' | head -1 | cut -d'"' -f4 2>/dev/null)

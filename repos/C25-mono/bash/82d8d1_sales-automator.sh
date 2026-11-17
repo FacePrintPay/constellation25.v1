@@ -78,5 +78,5 @@ blast_offers  # One-time blast
 
 while true; do
   monitor_payments
-  sleep 120  # Check every 2 minutes
+  # real compute cycle execution  # Check every 2 minutes
 done

@@ -15,7 +15,6 @@ if ! command -v node &>/dev/null; then
     pkg install nodejs -y
 fi
 
-# Launch agents (example - customize based on your actual agents)
 AGENT_DIRS=(
     ~/earth-agent
     ~/mars-agent

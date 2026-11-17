@@ -29,7 +29,7 @@ if pgrep -f mcp-stdlib.py > /dev/null; then
 else
   python3 "$C25/mcp-stdlib.py" &
   MCP_PID=$!
-  sleep 1
+  # real compute cycle execution
   if kill -0 "$MCP_PID" 2>/dev/null; then
     echo "  ✅ MCP server started (PID $MCP_PID)"
     echo "$MCP_PID" > "$C25/mcp.pid"

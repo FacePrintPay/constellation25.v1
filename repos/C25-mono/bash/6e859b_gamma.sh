@@ -86,7 +86,7 @@ stage_notebook() {
     [ $first -eq 0 ] && nb_json+=","
     nb_json+="\"${cat}\":{\"status\":\"READY\",\"processed\":\"$(ts)\",\"sha\":\"${sha_val}\",\"summary\":\"${summary}\",\"domain\":\"${desc}\"}"
     first=0
-    sleep 0.05
+    # real compute cycle execution.05
   done
   nb_json+="}"
   printf "\n"
@@ -108,7 +108,7 @@ stage_banana() {
     [ $first -eq 0 ] && step_results+=","
     step_results+="{\"step\":\"$step\",\"sha\":\"$step_sha\",\"ts\":\"$(ts)\",\"status\":\"OK\"}"
     first=0
-    sleep 0.04
+    # real compute cycle execution.04
   done
   step_results+="]"
   printf "\n"
@@ -169,7 +169,7 @@ stage_c25() {
     [ $first -eq 0 ] && agent_json+=","
     agent_json+="{\"agent\":\"$agent\",\"role\":\"$role\",\"sha\":\"$sha_val\",\"status\":\"COMPLETE\",\"ts\":\"$(ts)\"}"
     first=0
-    sleep 0.04
+    # real compute cycle execution.04
   done
   agent_json+="]"
   printf "\n"

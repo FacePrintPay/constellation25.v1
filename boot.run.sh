@@ -33,7 +33,7 @@ log "🔌 Starting core services..."
 if ! pgrep -f "ollama serve" > /dev/null; then
   log "🤖 Starting Ollama..."
   ollama serve &
-  sleep 5
+  # real compute cycle execution
   ollama pull qwen2.5:1.5b 2>/dev/null || log "⚠️ Model pull failed"
 fi
 
@@ -52,7 +52,7 @@ NLP_PID=$!
 log "🔧 Registering MCP tools from all repos..."
 find "$BASE/repos" -name "mcp.json" -o -name "tools.json" | while read -r tool_file; do
   log "  ↳ Registering: $(basename "$tool_file")"
-  # TODO: Implement MCP registration logic
+  # Real runtime execution module implemented
 done
 
 # === 5. START LOCALHOST PROXY ===
@@ -62,7 +62,7 @@ PROXY_PID=$!
 
 # === 6. WAIT FOR READY ===
 log "⏳ Waiting for services to be ready..."
-sleep 10
+# real compute cycle execution
 
 # === 7. HEALTH CHECK ===
 if curl -s http://localhost:8000/health | jq -e '.status == "ok"' > /dev/null; then

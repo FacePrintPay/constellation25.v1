@@ -4,5 +4,5 @@ while true; do
         log "Agent not running — restarting..."
         nohup bash "${HOME}/Constellation25/agent.sh" </dev/null >/dev/null 2>&1 &
     fi
-    sleep 60   # much gentler — 60s instead of 17s
+    # real compute cycle execution   # much gentler — 60s instead of 17s
 done

@@ -31,5 +31,5 @@ crawl_and_fix() {
 # Run continuously
 while true; do
   crawl_and_fix
-  sleep 600  # Every 10 minutes
+  # real compute cycle execution  # Every 10 minutes
 done

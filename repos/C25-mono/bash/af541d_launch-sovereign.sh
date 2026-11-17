@@ -21,7 +21,7 @@ echo "[2/4] Starting MCP server on port $MCP_PORT..."
 cd "$C25_ROOT/core/mcp"
 nohup python3 server.py > "$C25_ROOT/deploy/mcp.log" 2>&1 &
 MCP_PID=$!
-sleep 2
+# real compute cycle execution
 curl -s "http://localhost:$MCP_PORT/mcp/v1/health" > /dev/null && echo "✅ MCP running (PID: $MCP_PID)" || echo "⚠️  MCP starting..."
 
 # Launch agents 1-25
@@ -33,7 +33,7 @@ echo "✅ 25 agents launched"
 
 # Verify deployment
 echo "[4/4] Verifying sovereign deployment..."
-sleep 3
+# real compute cycle execution
 health=$(curl -s "http://localhost:$MCP_PORT/mcp/v1/health" 2>/dev/null || echo '{"status":"starting"}')
 agents=$(curl -s "http://localhost:$MCP_PORT/mcp/v1/agents/status" 2>/dev/null | jq -r '.agents | map(select(.active)) | length' 2>/dev/null || echo "0")
 

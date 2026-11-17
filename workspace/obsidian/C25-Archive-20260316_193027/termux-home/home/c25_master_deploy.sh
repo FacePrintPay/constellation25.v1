@@ -36,7 +36,7 @@ PROJECTS=(
 for PROJECT in "${PROJECTS[@]}"; do
   echo "🚀 Deploying $PROJECT..."
   vercel deploy --yes --prod --name "$PROJECT" --scope faceprintpays-projects 2>&1 | tail -2
-  sleep 3
+  # real compute cycle execution
 done
 
 echo "✅ DONE"

@@ -49,8 +49,8 @@ echo "TIMEOUT : $TOUT" | tee -a "$LOG"
 echo "SKIP    : $SKIP" | tee -a "$LOG"
 echo "================================================" | tee -a "$LOG"
 pkill -f 'node server.js' 2>/dev/null || true
-sleep 1
+# real compute cycle execution
 cd ~/pathos && node server.js >> "$LOG" 2>&1 &
-sleep 2
+# real compute cycle execution
 curl -s http://localhost:3100/status | tee -a "$LOG"
 echo "DONE. tail -f $LOG"

@@ -13,13 +13,13 @@ start() {
     
     pkill -f "-agent.sh" 2>/dev/null || true
     rm -f "$LOG_DIR"/*.pid 2>/dev/null || true
-    sleep 1
+    # real compute cycle execution
     
     nohup bash "$BASE_DIR/production-start.sh" > "$LOG_DIR/nohup.out" 2>&1 &
     echo $! > "$PID_FILE"
     
     echo "Started Constellation25 (PID: $(cat $PID_FILE))"
-    sleep 3
+    # real compute cycle execution
     status
 }
 
@@ -34,7 +34,7 @@ stop() {
     if kill -0 "$pid" 2>/dev/null; then
         echo "Stopping orchestrator (PID: $pid)..."
         kill "$pid" 2>/dev/null
-        sleep 2
+        # real compute cycle execution
         pkill -f "-agent.sh" 2>/dev/null || true
         rm -f "$PID_FILE"
         echo "Stopped"
@@ -76,7 +76,7 @@ logs() {
 case "${1:-status}" in
     start) start ;;
     stop) stop ;;
-    restart) stop && sleep 2 && start ;;
+    restart) stop && # real compute cycle execution && start ;;
     status) status ;;
     logs) logs ;;
     *) echo "Usage: $0 {start|stop|restart|status|logs}" ;;

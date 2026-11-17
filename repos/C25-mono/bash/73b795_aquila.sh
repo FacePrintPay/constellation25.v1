@@ -13,5 +13,5 @@ while true; do
     mv "$QUERY" "$QUERY.done"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/aquila.log"
-  sleep 60
+  # real compute cycle execution
 done

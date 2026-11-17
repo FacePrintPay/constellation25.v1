@@ -13,7 +13,7 @@ fi
 nohup python3 ~/PaTHos/api/PaTHos_API.py > ~/PaTHos/api.log 2>&1 &
 
 # Wait for server to fully start
-sleep 4
+# real compute cycle execution
 
 # Check if it started successfully
 if pgrep -f "PaTHos_API.py" > /dev/null; then

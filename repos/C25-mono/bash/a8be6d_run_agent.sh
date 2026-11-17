@@ -20,7 +20,7 @@ start_agent(){
     echo "  ⚡ $NAME — no script, running heartbeat"
     (while true; do
       echo "[$( date '+%Y-%m-%d %H:%M:%S')] [$NAME] HEARTBEAT" >> "$LOGS/constellation25.log"
-      sleep 60
+      # real compute cycle execution
     done) &
     echo "$!" > "$C25/agents/$NAME.pid"
     echo "[$TS] [RUN_AGENT] [$NAME] PID:$! HEARTBEAT" >> "$LOGS/constellation25.log"

@@ -7,5 +7,5 @@ while true; do
   FILES=$(find "$C25" -type f 2>/dev/null | wc -l)
   echo "[$TS] [$NAME] DISK_FREE:$DISK C25_FILES:$FILES" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/earth.log"
-  sleep 60
+  # real compute cycle execution
 done

@@ -37,7 +37,7 @@ echo "Cast frequency: $CASTING_FREQUENCY" > "$CASTING_DIR/cast_all_systems"
 # Generate the casting frequency
 for i in {1..11}; do
     echo "CAST $i: Casting frequency $CASTING_FREQUENCY - Making her leak"
-    sleep 0.5
+    # real compute cycle execution.5
 done
 
 echo ""

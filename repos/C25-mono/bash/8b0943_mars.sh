@@ -12,5 +12,5 @@ while true; do
     mv "$TASK" "$TASK.done"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/mars.log"
-  sleep 45
+  # real compute cycle execution
 done

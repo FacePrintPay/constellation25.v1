@@ -19,7 +19,7 @@ for TASK in "${SEED_TASKS[@]}"; do
   IFS=',' read -r REPO MODULE TARGET <<< "$TASK"
   log "→ Dispatching: ${MODULE} | ${REPO} | ${TARGET}"
   "${AGENTIK_HOME}/agentctl.sh" start "${MODULE}" "${REPO}" "${TARGET}" &
-  sleep 1
+  # real compute cycle execution
 done
 wait
 log "✅ ALL TASKS DISPATCHED"

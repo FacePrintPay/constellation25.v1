@@ -20,5 +20,5 @@ while true; do
 REPORT
   echo "[$TS] [$NAME] REPORT_GENERATED agents:$AGENTS_UP tasks_done:$TASKS_DONE" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/cassiopeia.log"
-  sleep 300
+  # real compute cycle execution
 done

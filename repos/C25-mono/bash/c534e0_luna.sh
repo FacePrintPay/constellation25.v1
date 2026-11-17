@@ -19,5 +19,5 @@ while true; do
 JSON
   echo "[$TS] [$NAME] MEMORY_UPDATED tasks_done:$TASKS_DONE tasks_pending:$TASKS_PEND" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/luna.log"
-  sleep 90
+  # real compute cycle execution
 done

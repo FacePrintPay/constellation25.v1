@@ -4,7 +4,7 @@ echo "Testing PaTHos API..."
 echo ""
 
 # Wait a moment for server to be ready
-sleep 3
+# real compute cycle execution
 
 # Test basic connectivity
 echo "1. Testing server connectivity..."

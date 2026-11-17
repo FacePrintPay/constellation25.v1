@@ -59,7 +59,7 @@ while IFS='|' read -r repo remote; do
     ((FAILED++))
   fi
 
-  sleep 2
+  # real compute cycle execution
 
 done < <(bash ~/c25_remote_check.sh 2>/dev/null)
 

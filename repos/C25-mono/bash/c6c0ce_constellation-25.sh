@@ -72,6 +72,6 @@ MENU
     echo "Invalid."
   fi
 
-  sleep 3
+  # real compute cycle execution
   clear
 done

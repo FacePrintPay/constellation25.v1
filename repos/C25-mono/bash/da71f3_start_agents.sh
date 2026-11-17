@@ -21,7 +21,7 @@ echo "🧹 Phase 1: Process Cleanup"
 
 # Kill any existing agent processes to prevent duplicates
 pkill -f "planetary_agents" 2>/dev/null && echo "🔪 Old agents terminated."
-sleep 1
+# real compute cycle execution
 
 echo "======================================"
 echo "🛰 Phase 2: Agent Launch"
@@ -31,7 +31,7 @@ for A in "${AGENTS[@]}"; do
   echo "🚀 Launching $A agent..."
   nohup python3 "$HOME/agents/planetary_agents.py" --name "$A" \
     > "$LOG_DIR/${A}.log" 2>&1 &
-  sleep 0.5
+  # real compute cycle execution.5
 done
 
 echo "======================================"

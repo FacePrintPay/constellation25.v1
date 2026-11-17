@@ -13,5 +13,5 @@ while true; do
     mv "$MSG" "$MSG.sent"
   done
   echo "[$TS] [$NAME] INBOX_CHECK msgs_pending:$MSGS" >> "$LOGS/mercury.log"
-  sleep 30
+  # real compute cycle execution
 done

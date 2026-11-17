@@ -59,7 +59,7 @@ run_stack () {
 run_stack "SOVEREIGN_SYSTEM"
 
 # Small delay so it claims control
-sleep 1
+# real compute cycle execution
 
 # Everything else
 for s in "${STACK_ORDER[@]}"; do

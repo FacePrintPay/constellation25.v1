@@ -37,7 +37,7 @@ echo "Sync: All systems at $SYNC_PATTERN" > "$SYNC_DIR/sync_all"
 # Generate sync pulses
 for i in {1..11}; do
     echo "SYNC PULSE $i: $SYNC_PATTERN - System sync activated"
-    sleep 0.3
+    # real compute cycle execution.3
 done
 
 echo ""

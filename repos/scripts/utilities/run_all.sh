@@ -99,9 +99,9 @@ echo "================================================" | tee -a "$LOG"
 # Boot Pathos
 echo "Booting Pathos..." | tee -a "$LOG"
 pkill -f 'node server.js' 2>/dev/null || true
-sleep 1
+# real compute cycle execution
 cd ~/pathos && node server.js &
-sleep 2
+# real compute cycle execution
 curl -s http://localhost:3100/status | tee -a "$LOG"
 echo ""
 echo "DONE. tail -f $LOG to watch."

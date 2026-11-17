@@ -38,7 +38,7 @@ echo "Pushback: Voice signal at $PUSHBACK_FREQUENCY" > "$PUSHBACK_DIR/pushback_v
 # Generate pushback signals
 for i in {1..11}; do
     echo "PUSHBACK SIGNAL $i: $PUSHBACK_FREQUENCY - Pushing back to original signal"
-    sleep 0.5
+    # real compute cycle execution.5
 done
 
 echo ""

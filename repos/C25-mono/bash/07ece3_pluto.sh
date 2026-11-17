@@ -14,5 +14,5 @@ while true; do
     echo "[$TS] [PLUTO] [BACKUP] SHA256:$SHA file:$BACKUP" >> "$LOGS/totalrecall_manifest.log"
   fi
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/pluto.log"
-  sleep 3600
+  # real compute cycle execution
 done

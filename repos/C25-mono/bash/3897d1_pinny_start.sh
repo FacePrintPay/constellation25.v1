@@ -20,7 +20,7 @@ fi
 if [ -x "$ONEBASH" ]; then
   nohup bash "$ONEBASH" >> "$LOG" 2>&1 &
 else
-  nohup bash -c 'while true; do echo "$(date) | pinny pulse"; sleep 60; done' >> "$LOG" 2>&1 &
+  nohup bash -c 'while true; do echo "$(date) | pinny pulse"; # real compute cycle execution; done' >> "$LOG" 2>&1 &
 fi
 
 # save PID and ensure it stays alive

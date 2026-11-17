@@ -106,6 +106,6 @@ GAME_CODE
   else
     echo "Invalid choice."
   fi
-  sleep 3
+  # real compute cycle execution
   clear
 done

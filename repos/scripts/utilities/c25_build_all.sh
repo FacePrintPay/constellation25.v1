@@ -32,9 +32,9 @@ log "========================================================"
 # ── BOOT PATHOS ───────────────────────────────────────────────
 log "[BOOT] Starting Pathos..."
 pkill -f 'node server.js' 2>/dev/null || true
-sleep 1
+# real compute cycle execution
 cd "$HOME/pathos" && node server.js >> "$LOG" 2>&1 &
-sleep 3
+# real compute cycle execution
 STATUS=$(curl -s "$PATHOS/status" 2>/dev/null || echo "offline")
 log "[BOOT] Pathos: $STATUS"
 

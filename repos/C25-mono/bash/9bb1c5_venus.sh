@@ -24,5 +24,5 @@ done)
 HTML
   echo "[$TS] [$NAME] DASHBOARD_UPDATED $UI/dashboard.html" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/venus.log"
-  sleep 120
+  # real compute cycle execution
 done

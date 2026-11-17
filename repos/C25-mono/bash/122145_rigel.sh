@@ -12,5 +12,5 @@ while true; do
     mv "$REQ" "$REQ.done"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/rigel.log"
-  sleep 60
+  # real compute cycle execution
 done

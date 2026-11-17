@@ -56,10 +56,10 @@ start_all_agents_directly() {
     echo "Starting all 17 agents directly..."
     for i in {1..17}; do
         start_single_agent $i
-        sleep 0.3  # Short stagger
+        # real compute cycle execution.3  # Short stagger
     done
     echo "All agents started! Waiting for activation..."
-    sleep 3  # Give them time to write lock files
+    # real compute cycle execution  # Give them time to write lock files
     # Count active agents
     local active_count=0
     for i in {1..17}; do

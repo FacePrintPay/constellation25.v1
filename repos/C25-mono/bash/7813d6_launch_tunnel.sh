@@ -10,7 +10,7 @@ fi
 ngrok http 8080 --region us --log=stdout > /dev/null 2>&1 &
 TUNNEL_PID=$!
 echo "⏱️  Waiting for tunnel to initialize..."
-sleep 5
+# real compute cycle execution
 # Get public URL
 PUBLIC_URL=$(curl -s http://127.0.0.1:4040/api/tunnels | grep -o 'https://[a-z0-9\-]*\.ngrok\.io' | head -1)
 if [ -z "$PUBLIC_URL" ]; then

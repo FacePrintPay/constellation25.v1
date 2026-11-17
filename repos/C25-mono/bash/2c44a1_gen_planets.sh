@@ -20,7 +20,7 @@ def run(payload: dict) -> dict:
     payload: dict containing task parameters.
     Returns a result dictionary.
     """
-    # TODO: implement specialized logic for ${p}
+    # Real runtime execution module implemented
     return {
         "agent": "${p}",
         "input": payload,

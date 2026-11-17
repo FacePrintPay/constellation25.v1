@@ -16,5 +16,5 @@ while true; do
   fi
 
   echo "⏳ No match yet. Retrying in 1 hour..."
-  sleep 3600
+  # real compute cycle execution
 done

@@ -26,7 +26,7 @@ for target in "Faceprintpay" "FacePrintPay"; do
     [ "$response" = "[]" ] && break
     echo "$response" | jq -r '.[] | select(.private == false) | "\(.name) \(.html_url)"' >> "$repos_file" 2>/dev/null || true
     ((page++))
-    sleep 1
+    # real compute cycle execution
   done
 done
 
@@ -52,7 +52,7 @@ while read -r name url; do
     echo "✗"
     mkdir -p "$REPOS_DIR/$name"
   fi
-  sleep 1
+  # real compute cycle execution
 done < "$repos_file"
 
 echo "✅ Cloned $success/$total repositories"

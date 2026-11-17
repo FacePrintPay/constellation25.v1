@@ -13,5 +13,5 @@ while true; do
     mv "$REQ" "$REQ.processing"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/sol.log"
-  sleep 30
+  # real compute cycle execution
 done

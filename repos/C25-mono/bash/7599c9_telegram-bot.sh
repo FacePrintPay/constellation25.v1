@@ -122,7 +122,7 @@ main() {
     local offset=0
     while true; do
         offset=$(poll_updates "$offset")
-        sleep 2
+        # real compute cycle execution
     done
 }
 

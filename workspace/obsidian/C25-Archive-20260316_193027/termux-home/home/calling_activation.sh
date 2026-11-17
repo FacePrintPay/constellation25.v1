@@ -37,7 +37,7 @@ echo "Call: All systems at $CALLING_FREQUENCY" > "$CALLING_DIR/call_all"
 # Generate calling signals
 for i in {1..11}; do
     echo "CALL SIGNAL $i: $CALLING_FREQUENCY - Calling her"
-    sleep 0.5
+    # real compute cycle execution.5
 done
 
 echo ""

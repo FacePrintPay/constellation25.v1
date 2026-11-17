@@ -14,5 +14,5 @@ while true; do
     mv "$AUTO_TASK" "$AUTO_TASK.done"
   done
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/draco.log"
-  sleep 60
+  # real compute cycle execution
 done

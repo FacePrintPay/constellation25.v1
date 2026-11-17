@@ -7,5 +7,5 @@ while true; do
   VENV_COUNT=$(ls -d "$VENVS"/*/  2>/dev/null | wc -l)
   echo "[$TS] [$NAME] VENV_STATUS count:$VENV_COUNT" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/pleiades.log"
-  sleep 300
+  # real compute cycle execution
 done

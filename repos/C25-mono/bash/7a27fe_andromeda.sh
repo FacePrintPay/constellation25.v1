@@ -11,5 +11,5 @@ while true; do
     echo "[$TS] [$NAME] REPO_STATUS path:$REPO branch:$BRANCH" >> "$LOGS/constellation25.log"
   done
   echo "[$TS] [$NAME] STATUS:OK repos:$REPO_COUNT" >> "$LOGS/andromeda.log"
-  sleep 300
+  # real compute cycle execution
 done

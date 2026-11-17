@@ -12,5 +12,5 @@ while true; do
   UNKNOWN=$(find "$C25" -maxdepth 1 -type f -name "*.sh" 2>/dev/null | wc -l)
   echo "[$TS] [$NAME] SECURITY vault_perm:$VAULT_PERM log_perm:$LOG_PERM scripts:$UNKNOWN" >> "$LOGS/constellation25.log"
   echo "[$TS] [$NAME] STATUS:OK" >> "$LOGS/perseus.log"
-  sleep 180
+  # real compute cycle execution
 done

@@ -28,7 +28,7 @@ echo "[•] Launching PaTHos API..."
 pkill -f PaTHos_API.py 2>/dev/null
 nohup python3 api/PaTHos_API.py > logs/api.log 2>&1 &
 
-sleep 3
+# real compute cycle execution
 if pgrep -f PaTHos_API.py >/dev/null; then
   echo "[✓] API active at http://127.0.0.1:5000"
 else

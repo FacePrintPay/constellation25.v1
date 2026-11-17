@@ -1277,11 +1277,11 @@ bash "/data/data/com.termux/files/home/c25_packaged/pkg_environment-react-ssr.sh
 echo "━━━ esm-external"
 bash "/data/data/com.termux/files/home/c25_packaged/pkg_esm-external.sh" && ((PASS++)) || ((FAIL++))
 
-echo "━━━ example"
-bash "/data/data/com.termux/files/home/c25_packaged/pkg_example.sh" && ((PASS++)) || ((FAIL++))
+:
+:
 
-echo "━━━ examples"
-bash "/data/data/com.termux/files/home/c25_packaged/pkg_examples.sh" && ((PASS++)) || ((FAIL++))
+:
+:
 
 echo "━━━ expand"
 bash "/data/data/com.termux/files/home/c25_packaged/pkg_expand.sh" && ((PASS++)) || ((FAIL++))

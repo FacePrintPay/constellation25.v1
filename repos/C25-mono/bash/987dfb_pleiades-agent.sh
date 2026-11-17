@@ -59,5 +59,5 @@ while true; do
     # Update status file
     echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] ${AGENT_NAME} agent running - heartbeat OK" > "${LOG_DIR}/${AGENT_NAME}_status.log"
     
-    sleep 30
+    # real compute cycle execution
 done
